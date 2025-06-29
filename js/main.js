@@ -128,3 +128,101 @@
     $grid.isotope({ filter: filterValue });
   });
 
+$(document).ready(function(){
+    $('.services-carousel').owlCarousel({
+      loop: true,
+      margin: 20,
+      nav: true,
+      dots: false,
+      navText: ["<i class='fas fa-chevron-left'></i>", "<i class='fas fa-chevron-right'></i>"],
+     responsive: {
+        0: {
+          items: 1,
+          animateOut: 'fadeOut',
+          animateIn: 'fadeIn'
+        },
+        576: {
+          items: 2
+        },
+        768: {
+          items: 3
+        },
+        992: {
+          items: 3
+        },
+        1200: {
+          items: 3
+        }
+      }
+    });
+  });
+
+
+
+  $(document).ready(function(){
+    $(".services-slider").owlCarousel({
+      loop: true,
+      margin: 20,
+      nav: true,
+      autoplay: true,               // 🔁 Auto-slide enabled
+      autoplayTimeout: 4000,        // ⏱ Delay between slides (in ms)
+      autoplayHoverPause: true,     // ⏸ Pause on hover
+      smartSpeed: 700,              // 🎯 Transition speed
+      navText: [
+        '<div class="custom-nav-btn left-nav"><i class="fas fa-chevron-left"></i></div>',
+        '<div class="custom-nav-btn right-nav"><i class="fas fa-chevron-right"></i></div>'
+      ],
+      responsive: {
+        0: {
+          items: 1
+        },
+        576: {
+          items: 1
+        },
+        768: {
+          items: 2
+        },
+        992: {
+          items: 3
+        },
+        1200: {
+          items: 3
+        }
+      }
+    });
+  });
+
+
+
+
+   const swiper = new Swiper(".mySwiper", {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    centeredSlides: true,
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev"
+    },
+    autoplay: {
+      delay: 3500,
+      disableOnInteraction: false
+    },
+    breakpoints: {
+      320: { slidesPerView: 1, centeredSlides: false },
+      768: { slidesPerView: 2, centeredSlides: false },
+      992: { slidesPerView: 3, centeredSlides: true }
+    }
+  });
+
+    gsap.from(".swiper-button-prev, .swiper-button-next", {
+    opacity: 0,
+    y: -20,
+    duration: 1.2,
+    ease: "power3.out",
+    delay: 0.5
+  });

@@ -31,6 +31,10 @@
   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
   <!-- Fancybox CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
 
 </head>
@@ -52,12 +56,25 @@
       </div> -->
       <!-- </a> -->
 
-
       <div class="logo">
-        <a href="index.html" class="logo-link d-flex align-items-center">
-          <img src="img/logo.jpg" alt="Let's Talk Logo" class="img-fluid" style="height:100px;">
+        <a href="index.html" class="logo-link d-flex align-items-center text-decoration-none">
+          <!-- Logo Image -->
+          <img src="img/logo.jpg" alt="Let's Talk Logo" class="img-fluid mr-3" style="height:100px; width:auto;">
+
+          <!-- Logo Text -->
+          <div class="d-flex flex-column justify-content-center">
+            <div class="d-flex align-items-center">
+              <span class="logo-main font-weight-bold" style="font-size: 1.5rem; line-height: 1.2;">Let’s</span>
+              <span class="logo-highlight font-weight-bold ml-1"
+                style="font-size: 1.5rem; line-height: 1.2;">Talk</span>
+              <span class="logo-dot font-weight-bold" style="font-size: 1.5rem; color: #007bff;">.</span>
+            </div>
+            <span class="logo-sub text-muted" style="font-size: 0.9rem;">Child Development Center</span>
+          </div>
         </a>
       </div>
+
+
       <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -326,215 +343,160 @@
   <!-- About End -->
 
   <!-- Services Section -->
-  <div class="container-fluid pt-5">
+  <section id="services" class="py-5" style="background-color: #fff;">
     <div class="container">
-      <div class="text-center pb-2" data-aos="fade-down">
+      <div class="text-center pb-4" data-aos="fade-down">
         <p class="section-title px-5">
           <span class="px-2">Services</span>
         </p>
         <h1 class="mb-4">Services We Provide</h1>
       </div>
-      <div class="row">
 
-        <!-- Service Card Template -->
-        <!-- Speech Therapy -->
-        <div class="col-lg-4 col-md-6 mb-5" data-aos="fade-up" data-aos-delay="100">
-          <div class="card border-0 shadow h-100">
-            <div class="position-relative overflow-hidden rounded-top" style="height: 220px;">
-              <img class="w-100 h-100" src="img/what-is-speech-therapy.jpeg" alt="Speech Therapy"
-                style="object-fit: cover;">
-              <span class="service-icon position-absolute"
-                style="top: 15px; left: 15px; background: #fff; border-radius: 50%; padding: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
-                <i class="fas fa-microphone-alt text-primary" style="font-size: 1.5rem;"></i>
-              </span>
-            </div>
+      <!-- Owl Carousel Wrapper -->
+      <div class="owl-carousel owl-theme services-slider position-relative">
+
+        <!-- Service: Speech Therapy -->
+        <div class="service-card">
+          <div class="card h-100 border-0 shadow service-shadow" style="min-height: 430px;">
+            <img src="img/what-is-speech-therapy.jpeg" alt="Speech Therapy" class="card-img-top"
+              style="height: 220px; object-fit: cover;">
             <div class="card-body text-center">
-              <h4 class="card-title font-weight-bold mb-2">Speech Therapy</h4>
-              <p class="card-text text-muted mb-0">Enhancing communication skills through tailored speech and language
+              <h5 class="card-title font-weight-bold">Speech Therapy</h5>
+              <p class="card-text text-muted">Enhancing communication skills through tailored speech and language
                 therapy sessions.</p>
             </div>
           </div>
         </div>
 
-        <!-- Music Therapy -->
-        <div class="col-lg-4 col-md-6 mb-5" data-aos="zoom-in" data-aos-delay="200">
-          <div class="card border-0 shadow h-100">
-            <div class="position-relative overflow-hidden rounded-top" style="height: 220px;">
-              <img class="w-100 h-100" src="img/Little-Pioneers-Music-Therapy-scaled.jpg" alt="Music Therapy"
-                style="object-fit: cover;">
-              <span class="service-icon position-absolute"
-                style="top: 15px; left: 15px; background: #fff; border-radius: 50%; padding: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
-                <i class="fas fa-music text-success" style="font-size: 1.5rem;"></i>
-              </span>
-            </div>
+        <!-- Service: Music Therapy -->
+        <div class="service-card">
+          <div class="card h-100 border-0 shadow service-shadow" style="min-height: 430px;">
+            <img src="img/Little-Pioneers-Music-Therapy-scaled.jpg" alt="Music Therapy" class="card-img-top"
+              style="height: 220px; object-fit: cover;">
             <div class="card-body text-center">
-              <h4 class="card-title font-weight-bold mb-2">Music Therapy</h4>
-              <p class="card-text text-muted mb-0">Using music to improve emotional well-being, social skills, and
+              <h5 class="card-title font-weight-bold">Music Therapy</h5>
+              <p class="card-text text-muted">Using music to improve emotional well-being, social skills, and
                 self-expression.</p>
             </div>
           </div>
         </div>
 
-        <!-- Special Education -->
-        <div class="col-lg-4 col-md-6 mb-5" data-aos="fade-right" data-aos-delay="300">
-          <div class="card border-0 shadow h-100">
-            <div class="position-relative overflow-hidden rounded-top" style="height: 220px;">
-              <img class="w-100 h-100" src="img/images.jpeg" alt="Special Education" style="object-fit: cover;">
-              <span class="service-icon position-absolute"
-                style="top: 15px; left: 15px; background: #fff; border-radius: 50%; padding: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
-                <i class="fas fa-chalkboard-teacher text-warning" style="font-size: 1.5rem;"></i>
-              </span>
-            </div>
+        <!-- Service: Special Education -->
+        <div class="service-card">
+          <div class="card h-100 border-0 shadow service-shadow" style="min-height: 430px;">
+            <img src="img/images.jpeg" alt="Special Education" class="card-img-top"
+              style="height: 220px; object-fit: cover;">
             <div class="card-body text-center">
-              <h4 class="card-title font-weight-bold mb-2">Special Education</h4>
-              <p class="card-text text-muted mb-0">Individualized educational programs tailored to each child’s unique
+              <h5 class="card-title font-weight-bold">Special Education</h5>
+              <p class="card-text text-muted">Individualized educational programs tailored to each child’s unique
                 learning needs.</p>
             </div>
           </div>
         </div>
 
-        <!-- Occupational Therapy -->
-        <div class="col-lg-4 col-md-6 mb-5" data-aos="flip-up" data-aos-delay="100">
-          <div class="card border-0 shadow h-100">
-            <div class="position-relative overflow-hidden rounded-top" style="height: 220px;">
-              <img class="w-100 h-100" src="img/pediatric-occupational-therapy-636672368.webp"
-                alt="Occupational Therapy" style="object-fit: cover;">
-              <span class="service-icon position-absolute"
-                style="top: 15px; left: 15px; background: #fff; border-radius: 50%; padding: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
-                <i class="fas fa-hand-holding-medical text-danger" style="font-size: 1.5rem;"></i>
-              </span>
-            </div>
+        <!-- Service: Occupational Therapy -->
+        <div class="service-card">
+          <div class="card h-100 border-0 shadow service-shadow" style="min-height: 430px;">
+            <img src="img/pediatric-occupational-therapy-636672368.webp" alt="Occupational Therapy" class="card-img-top"
+              style="height: 220px; object-fit: cover;">
             <div class="card-body text-center">
-              <h4 class="card-title font-weight-bold mb-2">Occupational Therapy</h4>
-              <p class="card-text text-muted mb-0">Helping children gain independence in daily activities through
+              <h5 class="card-title font-weight-bold">Occupational Therapy</h5>
+              <p class="card-text text-muted">Helping children gain independence in daily activities through
                 skill-building strategies.</p>
             </div>
           </div>
         </div>
 
-        <!-- Behaviour Therapy -->
-        <div class="col-lg-4 col-md-6 mb-5" data-aos="fade-up" data-aos-delay="200">
-          <div class="card border-0 shadow h-100">
-            <div class="position-relative overflow-hidden rounded-top" style="height: 220px;">
-              <img class="w-100 h-100" src="img/images (1).jpeg" alt="Behaviour Therapy" style="object-fit: cover;">
-              <span class="service-icon position-absolute"
-                style="top: 15px; left: 15px; background: #fff; border-radius: 50%; padding: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
-                <i class="fas fa-brain text-info" style="font-size: 1.5rem;"></i>
-              </span>
-            </div>
+        <!-- Service: Behaviour Therapy -->
+        <div class="service-card">
+          <div class="card h-100 border-0 shadow service-shadow" style="min-height: 430px;">
+            <img src="img/images (1).jpeg" alt="Behaviour Therapy" class="card-img-top"
+              style="height: 220px; object-fit: cover;">
             <div class="card-body text-center">
-              <h4 class="card-title font-weight-bold mb-2">Behaviour Therapy</h4>
-              <p class="card-text text-muted mb-0">Addressing behavioral challenges with positive strategies and
-                structured support.</p>
+              <h5 class="card-title font-weight-bold">Behaviour Therapy</h5>
+              <p class="card-text text-muted">Addressing behavioral challenges with positive strategies and structured
+                support.</p>
             </div>
           </div>
         </div>
 
-        <!-- Early Intervention -->
-        <div class="col-lg-4 col-md-6 mb-5" data-aos="zoom-in" data-aos-delay="300">
-          <div class="card border-0 shadow h-100">
-            <div class="position-relative overflow-hidden rounded-top" style="height: 220px;">
-              <img class="w-100 h-100"
-                src="img/Early-Intervention-and-Why-it-is-Critical-outcomes_of_early_intervention_in_children_with_autism.jpg.webp"
-                alt="Early Intervention" style="object-fit: cover;">
-              <span class="service-icon position-absolute"
-                style="top: 15px; left: 15px; background: #fff; border-radius: 50%; padding: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
-                <i class="fas fa-seedling text-success" style="font-size: 1.5rem;"></i>
-              </span>
-            </div>
+        <!-- Service: Early Intervention -->
+        <div class="service-card">
+          <div class="card h-100 border-0 shadow service-shadow" style="min-height: 430px;">
+            <img
+              src="img/Early-Intervention-and-Why-it-is-Critical-outcomes_of_early_intervention_in_children_with_autism.jpg.webp"
+              alt="Early Intervention" class="card-img-top" style="height: 220px; object-fit: cover;">
             <div class="card-body text-center">
-              <h4 class="card-title font-weight-bold mb-2">Early Intervention</h4>
-              <p class="card-text text-muted mb-0">Supporting developmental milestones with early, personalized care and
+              <h5 class="card-title font-weight-bold">Early Intervention</h5>
+              <p class="card-text text-muted">Supporting developmental milestones with early, personalized care and
                 therapies.</p>
             </div>
           </div>
         </div>
 
-        <!-- Preschool Readiness -->
-        <div class="col-lg-4 col-md-6 mb-5" data-aos="fade-left" data-aos-delay="100">
-          <div class="card border-0 shadow h-100">
-            <div class="position-relative overflow-hidden rounded-top" style="height: 220px;">
-              <img class="w-100 h-100" src="img/images (2).jpeg" alt="Preschool Readiness" style="object-fit: cover;">
-              <span class="service-icon position-absolute"
-                style="top: 15px; left: 15px; background: #fff; border-radius: 50%; padding: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
-                <i class="fas fa-school text-primary" style="font-size: 1.5rem;"></i>
-              </span>
-            </div>
+        <!-- Service: Preschool Readiness -->
+        <div class="service-card">
+          <div class="card h-100 border-0 shadow service-shadow" style="min-height: 430px;">
+            <img src="img/images (2).jpeg" alt="Preschool Readiness" class="card-img-top"
+              style="height: 220px; object-fit: cover;">
             <div class="card-body text-center">
-              <h4 class="card-title font-weight-bold mb-2">Preschool Readiness</h4>
-              <p class="card-text text-muted mb-0">Preparing young learners for school with foundational skills and
-                routines.</p>
+              <h5 class="card-title font-weight-bold">Preschool Readiness</h5>
+              <p class="card-text text-muted">Preparing young learners for school with foundational skills and routines.
+              </p>
             </div>
           </div>
         </div>
 
-        <!-- Group Sessions -->
-        <div class="col-lg-4 col-md-6 mb-5" data-aos="fade-up" data-aos-delay="200">
-          <div class="card border-0 shadow h-100">
-            <div class="position-relative overflow-hidden rounded-top" style="height: 220px;">
-              <img class="w-100 h-100" src="img/pexels-ksenia-chernaya-8535230.jpg" alt="Group Sessions"
-                style="object-fit: cover;">
-              <span class="service-icon position-absolute"
-                style="top: 15px; left: 15px; background: #fff; border-radius: 50%; padding: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
-                <i class="fas fa-users text-warning" style="font-size: 1.5rem;"></i>
-              </span>
-            </div>
+        <!-- Service: Group Sessions -->
+        <div class="service-card">
+          <div class="card h-100 border-0 shadow service-shadow" style="min-height: 430px;">
+            <img src="img/pexels-ksenia-chernaya-8535230.jpg" alt="Group Sessions" class="card-img-top"
+              style="height: 220px; object-fit: cover;">
             <div class="card-body text-center">
-              <h4 class="card-title font-weight-bold mb-2">Group Sessions</h4>
-              <p class="card-text text-muted mb-0">Building peer interactions and communication through guided group
+              <h5 class="card-title font-weight-bold">Group Sessions</h5>
+              <p class="card-text text-muted">Building peer interactions and communication through guided group
                 activities.</p>
             </div>
           </div>
         </div>
 
-        <!-- Evening Activities -->
-        <div class="col-lg-4 col-md-6 mb-5" data-aos="flip-up" data-aos-delay="300">
-          <div class="card border-0 shadow h-100">
-            <div class="position-relative overflow-hidden rounded-top" style="height: 220px;">
-              <img class="w-100 h-100" src="img/Juniors-8.jpg" alt="Evening Activities" style="object-fit: cover;">
-              <span class="service-icon position-absolute"
-                style="top: 15px; left: 15px; background: #fff; border-radius: 50%; padding: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
-                <i class="fas fa-puzzle-piece text-danger" style="font-size: 1.5rem;"></i>
-              </span>
-            </div>
+        <!-- Service: Evening Activities -->
+        <div class="service-card">
+          <div class="card h-100 border-0 shadow service-shadow" style="min-height: 430px;">
+            <img src="img/Juniors-8.jpg" alt="Evening Activities" class="card-img-top"
+              style="height: 220px; object-fit: cover;">
             <div class="card-body text-center">
-              <h4 class="card-title font-weight-bold mb-2">Evening Activities</h4>
-              <p class="card-text text-muted mb-0">Fun, engaging, and therapeutic sessions to wind down the day with
-                learning and joy.</p>
+              <h5 class="card-title font-weight-bold">Evening Activities</h5>
+              <p class="card-text text-muted">Fun, engaging, and therapeutic sessions to wind down the day with learning
+                and joy.</p>
             </div>
           </div>
         </div>
 
-        <!-- Social Skills Development -->
-        <div class="col-lg-4 col-md-6 mb-5" data-aos="fade-up" data-aos-delay="400">
-          <div class="card border-0 shadow h-100">
-            <div class="position-relative overflow-hidden rounded-top" style="height: 220px;">
-              <img class="w-100 h-100"
-                src="img/How-to-Support-Social-Skills-Development-in-Children-with-Special-Needs.webp"
-                alt="Social Skills Development" style="object-fit: cover;">
-              <span class="service-icon position-absolute"
-                style="top: 15px; left: 15px; background: #fff; border-radius: 50%; padding: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
-                <i class="fas fa-comments text-success" style="font-size: 1.5rem;"></i>
-              </span>
-            </div>
+        <!-- Service: Social Skills Development -->
+        <div class="service-card">
+          <div class="card h-100 border-0 shadow service-shadow" style="min-height: 430px;">
+            <img src="img/How-to-Support-Social-Skills-Development-in-Children-with-Special-Needs.webp"
+              alt="Social Skills Development" class="card-img-top" style="height: 220px; object-fit: cover;">
             <div class="card-body text-center">
-              <h4 class="card-title font-weight-bold mb-2">Social Skills Development</h4>
-              <p class="card-text text-muted mb-0">Helping children learn social cues, emotional regulation, and
-                teamwork skills.</p>
+              <h5 class="card-title font-weight-bold">Social Skills Development</h5>
+              <p class="card-text text-muted">Helping children learn social cues, emotional regulation, and teamwork
+                skills.</p>
             </div>
           </div>
         </div>
 
       </div>
     </div>
-  </div>
+  </section>
 
 
   <!-- Gallery Section -->
+
+
   <section class="gallery-section py-5" style="background-color: #f9f9f9;">
     <div class="container">
-      <!-- Section Title -->
-      <div class="text-center pb-4" data-aos="fade-zoom-in" data-aos-duration="1000">
+      <div class="text-center pb-4">
         <p class="section-title px-5"><span class="px-2">Our Gallery</span></p>
         <h1 class="mb-3">Our Kids School Gallery</h1>
         <p class="text-muted mb-0" style="max-width:600px;margin:auto;">
@@ -542,356 +504,358 @@
           and achievements of our wonderful kids in a safe, nurturing environment.
         </p>
       </div>
+   
+    <div class="gallery-swiper-wrapper position-relative" style="overflow: visible;">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
 
-      <!-- Filters -->
-      <div class="row mt-4">
-        <div class="col-12 text-center mb-4" data-aos="flip-left" data-aos-delay="100">
-          <ul class="list-inline" id="portfolio-flters">
-            <li class="btn btn-outline-primary m-1 active" data-filter="*">All</li>
-            <li class="btn btn-outline-primary m-1" data-filter=".first">Playing</li>
-            <li class="btn btn-outline-primary m-1" data-filter=".second">Drawing</li>
-            <li class="btn btn-outline-primary m-1" data-filter=".third">Reading</li>
-          </ul>
+          <div class="swiper-slide">
+            <div class="card border-0 shadow-sm h-100">
+              <div class="position-relative overflow-hidden rounded" style="height: 250px;">
+                <img class="img-fluid w-100 h-100 object-fit-cover" src="img/1.png" />
+                <div class="portfolio-btn d-flex align-items-center justify-content-center">
+                  <a href="img/1.png" data-lightbox="portfolio" data-title="Playtime Fun">
+                    <i class="fa fa-plus text-white" style="font-size: 48px;"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="card-body text-center">
+                <h5 class="mb-1">Playtime Fun</h5>
+                <p class="text-muted small mb-0">Building friendships through play</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="card border-0 shadow-sm h-100">
+              <div class="position-relative overflow-hidden rounded" style="height: 250px;">
+                <img class="img-fluid w-100 h-100 object-fit-cover" src="img/2.png" />
+                <div class="portfolio-btn d-flex align-items-center justify-content-center">
+                  <a href="img/2.png" data-lightbox="portfolio" data-title="Playtime Fun">
+                    <i class="fa fa-plus text-white" style="font-size: 48px;"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="card-body text-center">
+                <h5 class="mb-1">Drawing Time</h5>
+                <p class="text-muted small mb-0">Creative minds at work</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="card border-0 shadow-sm h-100">
+              <div class="position-relative overflow-hidden rounded" style="height: 250px;">
+                <img class="img-fluid w-100 h-100 object-fit-cover" src="img/3.png" />
+                <div class="portfolio-btn d-flex align-items-center justify-content-center">
+                  <a href="img/3.png" data-lightbox="portfolio" data-title="Playtime Fun">
+                    <i class="fa fa-plus text-white" style="font-size: 48px;"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="card-body text-center">
+                <h5 class="mb-1">Reading Time</h5>
+                <p class="text-muted small mb-0">Imagination through stories</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="card border-0 shadow-sm h-100">
+              <div class="position-relative overflow-hidden rounded" style="height: 250px;">
+                <img class="img-fluid w-100 h-100 object-fit-cover" src="img/4.png" />
+                <div class="portfolio-btn d-flex align-items-center justify-content-center">
+                  <a href="img/4.png" data-lightbox="portfolio" data-title="Playtime Fun">
+                    <i class="fa fa-plus text-white" style="font-size: 48px;"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="card-body text-center">
+                <h5 class="mb-1">Taekwando</h5>
+                <p class="text-muted small mb-0">Confidence through movement</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="card border-0 shadow-sm h-100">
+              <div class="position-relative overflow-hidden rounded" style="height: 250px;">
+                <img class="img-fluid w-100 h-100 object-fit-cover" src="img/5.png" />
+                <div class="portfolio-btn d-flex align-items-center justify-content-center">
+                  <a href="img/5.png" data-lightbox="portfolio" data-title="Playtime Fun">
+                    <i class="fa fa-plus text-white" style="font-size: 48px;"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="card-body text-center">
+                <h5 class="mb-1">Taekwando</h5>
+                <p class="text-muted small mb-0">Confidence through movement</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card border-0 shadow-sm h-100">
+              <div class="position-relative overflow-hidden rounded" style="height: 250px;">
+                <img class="img-fluid w-100 h-100 object-fit-cover" src="img/6.png" />
+                <div class="portfolio-btn d-flex align-items-center justify-content-center">
+                  <a href="img/6.png" data-lightbox="portfolio" data-title="Playtime Fun">
+                    <i class="fa fa-plus text-white" style="font-size: 48px;"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="card-body text-center">
+                <h5 class="mb-1">Taekwando</h5>
+                <p class="text-muted small mb-0">Confidence through movement</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card border-0 shadow-sm h-100">
+              <div class="position-relative overflow-hidden rounded" style="height: 250px;">
+                <img class="img-fluid w-100 h-100 object-fit-cover" src="img/7.png" />
+                <div class="portfolio-btn d-flex align-items-center justify-content-center">
+                  <a href="img/7.png" data-lightbox="portfolio" data-title="Playtime Fun">
+                    <i class="fa fa-plus text-white" style="font-size: 48px;"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="card-body text-center">
+                <h5 class="mb-1">Taekwando</h5>
+                <p class="text-muted small mb-0">Confidence through movement</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card border-0 shadow-sm h-100">
+              <div class="position-relative overflow-hidden rounded" style="height: 250px;">
+                <img class="img-fluid w-100 h-100 object-fit-cover" src="img/8.png" />
+                <div class="portfolio-btn d-flex align-items-center justify-content-center">
+                  <a href="img/8.png" data-lightbox="portfolio" data-title="Playtime Fun">
+                    <i class="fa fa-plus text-white" style="font-size: 48px;"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="card-body text-center">
+                <h5 class="mb-1">Taekwando</h5>
+                <p class="text-muted small mb-0">Confidence through movement</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card border-0 shadow-sm h-100">
+              <div class="position-relative overflow-hidden rounded" style="height: 250px;">
+                <img class="img-fluid w-100 h-100 object-fit-cover" src="img/9.png" />
+                <div class="portfolio-btn d-flex align-items-center justify-content-center">
+                  <a href="img/9.png" data-lightbox="portfolio" data-title="Playtime Fun">
+                    <i class="fa fa-plus text-white" style="font-size: 48px;"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="card-body text-center">
+                <h5 class="mb-1">Taekwando</h5>
+                <p class="text-muted small mb-0">Confidence through movement</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card border-0 shadow-sm h-100">
+              <div class="position-relative overflow-hidden rounded" style="height: 250px;">
+                <img class="img-fluid w-100 h-100 object-fit-cover" src="img/10.png" />
+                <div class="portfolio-btn d-flex align-items-center justify-content-center">
+                  <a href="img/10.png" data-lightbox="portfolio" data-title="Playtime Fun">
+                    <i class="fa fa-plus text-white" style="font-size: 48px;"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="card-body text-center">
+                <h5 class="mb-1">Taekwando</h5>
+                <p class="text-muted small mb-0">Confidence through movement</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card border-0 shadow-sm h-100">
+              <div class="position-relative overflow-hidden rounded" style="height: 250px;">
+                <img class="img-fluid w-100 h-100 object-fit-cover" src="img/11.png" />
+                <div class="portfolio-btn d-flex align-items-center justify-content-center">
+                  <a href="img/11.png" data-lightbox="portfolio" data-title="Playtime Fun">
+                    <i class="fa fa-plus text-white" style="font-size: 48px;"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="card-body text-center">
+                <h5 class="mb-1">Taekwando</h5>
+                <p class="text-muted small mb-0">Confidence through movement</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card border-0 shadow-sm h-100">
+              <div class="position-relative overflow-hidden rounded" style="height: 250px;">
+                <img class="img-fluid w-100 h-100 object-fit-cover" src="img/12.png" />
+                <div class="portfolio-btn d-flex align-items-center justify-content-center">
+                  <a href="img/12.png" data-lightbox="portfolio" data-title="Playtime Fun">
+                    <i class="fa fa-plus text-white" style="font-size: 48px;"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="card-body text-center">
+                <h5 class="mb-1">Taekwando</h5>
+                <p class="text-muted small mb-0">Confidence through movement</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card border-0 shadow-sm h-100">
+              <div class="position-relative overflow-hidden rounded" style="height: 250px;">
+                <img class="img-fluid w-100 h-100 object-fit-cover" src="img/13.png" />
+                <div class="portfolio-btn d-flex align-items-center justify-content-center">
+                  <a href="img/13.png" data-lightbox="portfolio" data-title="Playtime Fun">
+                    <i class="fa fa-plus text-white" style="font-size: 48px;"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="card-body text-center">
+                <h5 class="mb-1">Taekwando</h5>
+                <p class="text-muted small mb-0">Confidence through movement</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card border-0 shadow-sm h-100">
+              <div class="position-relative overflow-hidden rounded" style="height: 250px;">
+                <img class="img-fluid w-100 h-100 object-fit-cover" src="img/14.png" />
+                <div class="portfolio-btn d-flex align-items-center justify-content-center">
+                  <a href="img/14.png" data-lightbox="portfolio" data-title="Playtime Fun">
+                    <i class="fa fa-plus text-white" style="font-size: 48px;"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="card-body text-center">
+                <h5 class="mb-1">Taekwando</h5>
+                <p class="text-muted small mb-0">Confidence through movement</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card border-0 shadow-sm h-100">
+              <div class="position-relative overflow-hidden rounded" style="height: 250px;">
+                <img class="img-fluid w-100 h-100 object-fit-cover" src="img/15.png" />
+                <div class="portfolio-btn d-flex align-items-center justify-content-center">
+                  <a href="img/15.png" data-lightbox="portfolio" data-title="Playtime Fun">
+                    <i class="fa fa-plus text-white" style="font-size: 48px;"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="card-body text-center">
+                <h5 class="mb-1">Taekwando</h5>
+                <p class="text-muted small mb-0">Confidence through movement</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card border-0 shadow-sm h-100">
+              <div class="position-relative overflow-hidden rounded" style="height: 250px;">
+                <img class="img-fluid w-100 h-100 object-fit-cover" src="img/16.png" />
+                <div class="portfolio-btn d-flex align-items-center justify-content-center">
+                  <a href="img/16.png" data-lightbox="portfolio" data-title="Playtime Fun">
+                    <i class="fa fa-plus text-white" style="font-size: 48px;"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="card-body text-center">
+                <h5 class="mb-1">Taekwando</h5>
+                <p class="text-muted small mb-0">Confidence through movement</p>
+              </div>
+            </div>
+          </div>
+
         </div>
+
+        <div class="swiper-pagination mt-4"></div>
+        <div style="color: white;" class="swiper-button-next"></div>
+        <div style="color: white;" class="swiper-button-prev"></div>
+      </div>
+       </div>
+    </div>
+
+  </section>
+  <!-- Gallery End -->
+
+  <!-- Taekwando Section -->
+  <section class="gallery-section py-5" style="background-color: #eef7ff;">
+    <div class="container">
+      <div class="text-center pb-4" data-aos="fade-up">
+        <p class="section-title px-5"><span class="px-2">Taekwando Training</span></p>
+        <h1 class="mb-3">Taekwando Gallery</h1>
+        <p class="text-muted mb-0" style="max-width:600px;margin:auto;">
+          Empowering our students with discipline, strength, and confidence through martial arts.
+        </p>
       </div>
 
-      <!-- Gallery Grid -->
-      <div class="row portfolio-container">
-        <!-- Example Item -->
-        <div class="col-lg-4 col-md-6 mb-4 portfolio-item first" data-aos="flip-up">
+      <div class="row">
+        <div class="col-lg-4 col-md-6 mb-4" data-aos="flip-up">
           <div class="card border-0 shadow-sm h-100">
             <div class="position-relative overflow-hidden rounded gallery-img-wrapper">
-              <img class="img-fluid w-100 h-100 object-fit-cover" src="img/1.png" alt="Playing" />
+              <img class="img-fluid w-100 h-100 object-fit-cover"
+                src="img/WhatsApp Image 2025-06-27 at 21.06.05_3c222e80.jpg" alt="Taekwando" />
               <div class="portfolio-btn d-flex align-items-center justify-content-center">
-                <a href="img/portfolio-1.jpg" data-lightbox="portfolio" data-title="Playtime Fun">
+                <a href="img/WhatsApp Image 2025-06-27 at 21.06.05_3c222e80.jpg" data-lightbox="Taekwando"
+                  data-title="Taekwando Class">
                   <i class="fa fa-plus text-white" style="font-size: 48px"></i>
                 </a>
               </div>
             </div>
             <div class="card-body text-center">
-              <h5 class="mb-1">Playtime Fun</h5>
-              <p class="text-muted small mb-0">Building friendships through play</p>
+              <h5 class="mb-1">Taekwando</h5>
+              <p class="text-muted small mb-0">Confidence through martial arts</p>
             </div>
           </div>
         </div>
 
-
-        <div class="col-lg-4 col-md-6 mb-4 portfolio-item second" data-aos="flip-up">
+        <div class="col-lg-4 col-md-6 mb-4" data-aos="flip-up">
           <div class="card border-0 shadow-sm h-100">
             <div class="position-relative overflow-hidden rounded gallery-img-wrapper">
-              <img class="img-fluid w-100 h-100 object-fit-cover" src="img/2.png" alt="Playing" />
+              <img class="img-fluid w-100 h-100 object-fit-cover"
+                src="img/WhatsApp Image 2025-06-27 at 21.06.05_bf5eab71.jpg" alt="Taekwando" />
               <div class="portfolio-btn d-flex align-items-center justify-content-center">
-                <a href="img/1.png" data-lightbox="portfolio" data-title="Playtime Fun">
+                <a href="img/WhatsApp Image 2025-06-27 at 21.06.05_bf5eab71.jpg" data-lightbox="Taekwando"
+                  data-title="Taekwando Class">
                   <i class="fa fa-plus text-white" style="font-size: 48px"></i>
                 </a>
               </div>
             </div>
             <div class="card-body text-center">
-              <h5 class="mb-1">Playtime Fun</h5>
-              <p class="text-muted small mb-0">Building friendships through play</p>
+              <h5 class="mb-1">Taekwando</h5>
+              <p class="text-muted small mb-0">Confidence through martial arts</p>
             </div>
           </div>
         </div>
 
-        <div class="col-lg-4 col-md-6 mb-4 portfolio-item first" data-aos="flip-up">
+        <div class="col-lg-4 col-md-6 mb-4" data-aos="flip-up">
           <div class="card border-0 shadow-sm h-100">
             <div class="position-relative overflow-hidden rounded gallery-img-wrapper">
-              <img class="img-fluid w-100 h-100 object-fit-cover" src="img/3.png" alt="Playing" />
+              <img class="img-fluid w-100 h-100 object-fit-cover"
+                src="img/WhatsApp Image 2025-06-27 at 21.06.05_ed57a4bc.jpg" alt="Taekwando" />
               <div class="portfolio-btn d-flex align-items-center justify-content-center">
-                <a href="img/2.png" data-lightbox="portfolio" data-title="Playtime Fun">
+                <a href="img/WhatsApp Image 2025-06-27 at 21.06.05_ed57a4bc.jpg" data-lightbox="Taekwando"
+                  data-title="Taekwando Class">
                   <i class="fa fa-plus text-white" style="font-size: 48px"></i>
                 </a>
               </div>
             </div>
             <div class="card-body text-center">
-              <h5 class="mb-1">Playtime Fun</h5>
-              <p class="text-muted small mb-0">Building friendships through play</p>
+              <h5 class="mb-1">Taekwando</h5>
+              <p class="text-muted small mb-0">Confidence through martial arts</p>
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6 mb-4 portfolio-item first" data-aos="flip-up">
-          <div class="card border-0 shadow-sm h-100">
-            <div class="position-relative overflow-hidden rounded gallery-img-wrapper">
-              <img class="img-fluid w-100 h-100 object-fit-cover" src="img/4.png" alt="Playing" />
-              <div class="portfolio-btn d-flex align-items-center justify-content-center">
-                <a href="img/3.png" data-lightbox="portfolio" data-title="Playtime Fun">
-                  <i class="fa fa-plus text-white" style="font-size: 48px"></i>
-                </a>
-              </div>
-            </div>
-            <div class="card-body text-center">
-              <h5 class="mb-1">Playtime Fun</h5>
-              <p class="text-muted small mb-0">Building friendships through play</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 mb-4 portfolio-item third" data-aos="flip-up">
-          <div class="card border-0 shadow-sm h-100">
-            <div class="position-relative overflow-hidden rounded gallery-img-wrapper">
-              <img class="img-fluid w-100 h-100 object-fit-cover" src="img/4.png" alt="Playing" />
-              <div class="portfolio-btn d-flex align-items-center justify-content-center">
-                <a href="img/4.png" data-lightbox="portfolio" data-title="Playtime Fun">
-                  <i class="fa fa-plus text-white" style="font-size: 48px"></i>
-                </a>
-              </div>
-            </div>
-            <div class="card-body text-center">
-              <h5 class="mb-1">Playtime Fun</h5>
-              <p class="text-muted small mb-0">Building friendships through play</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 mb-4 portfolio-item first" data-aos="flip-up">
-          <div class="card border-0 shadow-sm h-100">
-            <div class="position-relative overflow-hidden rounded gallery-img-wrapper">
-              <img class="img-fluid w-100 h-100 object-fit-cover" src="img/5.png" alt="Playing" />
-              <div class="portfolio-btn d-flex align-items-center justify-content-center">
-                <a href="img/5.png" data-lightbox="portfolio" data-title="Playtime Fun">
-                  <i class="fa fa-plus text-white" style="font-size: 48px"></i>
-                </a>
-              </div>
-            </div>
-            <div class="card-body text-center">
-              <h5 class="mb-1">Playtime Fun</h5>
-              <p class="text-muted small mb-0">Building friendships through play</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 mb-4 portfolio-item first" data-aos="flip-up">
-          <div class="card border-0 shadow-sm h-100">
-            <div class="position-relative overflow-hidden rounded gallery-img-wrapper">
-              <img class="img-fluid w-100 h-100 object-fit-cover" src="img/5.png" alt="Playing" />
-              <div class="portfolio-btn d-flex align-items-center justify-content-center">
-                <a href="img/6.png" data-lightbox="portfolio" data-title="Playtime Fun">
-                  <i class="fa fa-plus text-white" style="font-size: 48px"></i>
-                </a>
-              </div>
-            </div>
-            <div class="card-body text-center">
-              <h5 class="mb-1">Playtime Fun</h5>
-              <p class="text-muted small mb-0">Building friendships through play</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 mb-4 portfolio-item first" data-aos="flip-up">
-          <div class="card border-0 shadow-sm h-100">
-            <div class="position-relative overflow-hidden rounded gallery-img-wrapper">
-              <img class="img-fluid w-100 h-100 object-fit-cover" src="img/6.png" alt="Playing" />
-              <div class="portfolio-btn d-flex align-items-center justify-content-center">
-                <a href="img/7.png" data-lightbox="portfolio" data-title="Playtime Fun">
-                  <i class="fa fa-plus text-white" style="font-size: 48px"></i>
-                </a>
-              </div>
-            </div>
-            <div class="card-body text-center">
-              <h5 class="mb-1">Playtime Fun</h5>
-              <p class="text-muted small mb-0">Building friendships through play</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 mb-4 portfolio-item first" data-aos="flip-up">
-          <div class="card border-0 shadow-sm h-100">
-            <div class="position-relative overflow-hidden rounded gallery-img-wrapper">
-              <img class="img-fluid w-100 h-100 object-fit-cover" src="img/7.png" alt="Playing" />
-              <div class="portfolio-btn d-flex align-items-center justify-content-center">
-                <a href="img/8.png" data-lightbox="portfolio" data-title="Playtime Fun">
-                  <i class="fa fa-plus text-white" style="font-size: 48px"></i>
-                </a>
-              </div>
-            </div>
-            <div class="card-body text-center">
-              <h5 class="mb-1">Playtime Fun</h5>
-              <p class="text-muted small mb-0">Building friendships through play</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 mb-4 portfolio-item first" data-aos="flip-up">
-          <div class="card border-0 shadow-sm h-100">
-            <div class="position-relative overflow-hidden rounded gallery-img-wrapper">
-              <img class="img-fluid w-100 h-100 object-fit-cover" src="img/8.png" alt="Playing" />
-              <div class="portfolio-btn d-flex align-items-center justify-content-center">
-                <a href="img/9.png" data-lightbox="portfolio" data-title="Playtime Fun">
-                  <i class="fa fa-plus text-white" style="font-size: 48px"></i>
-                </a>
-              </div>
-            </div>
-            <div class="card-body text-center">
-              <h5 class="mb-1">Playtime Fun</h5>
-              <p class="text-muted small mb-0">Building friendships through play</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 mb-4 portfolio-item first" data-aos="flip-up">
-          <div class="card border-0 shadow-sm h-100">
-            <div class="position-relative overflow-hidden rounded gallery-img-wrapper">
-              <img class="img-fluid w-100 h-100 object-fit-cover" src="img/9.png" alt="Playing" />
-              <div class="portfolio-btn d-flex align-items-center justify-content-center">
-                <a href="img/10.png" data-lightbox="portfolio" data-title="Playtime Fun">
-                  <i class="fa fa-plus text-white" style="font-size: 48px"></i>
-                </a>
-              </div>
-            </div>
-            <div class="card-body text-center">
-              <h5 class="mb-1">Playtime Fun</h5>
-              <p class="text-muted small mb-0">Building friendships through play</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 mb-4 portfolio-item first" data-aos="flip-up">
-          <div class="card border-0 shadow-sm h-100">
-            <div class="position-relative overflow-hidden rounded gallery-img-wrapper">
-              <img class="img-fluid w-100 h-100 object-fit-cover" src="img/10.png" alt="Playing" />
-              <div class="portfolio-btn d-flex align-items-center justify-content-center">
-                <a href="img/11.png" data-lightbox="portfolio" data-title="Playtime Fun">
-                  <i class="fa fa-plus text-white" style="font-size: 48px"></i>
-                </a>
-              </div>
-            </div>
-            <div class="card-body text-center">
-              <h5 class="mb-1">Playtime Fun</h5>
-              <p class="text-muted small mb-0">Building friendships through play</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 mb-4 portfolio-item first" data-aos="flip-up">
-          <div class="card border-0 shadow-sm h-100">
-            <div class="position-relative overflow-hidden rounded gallery-img-wrapper">
-              <img class="img-fluid w-100 h-100 object-fit-cover" src="img/11.png" alt="Playing" />
-              <div class="portfolio-btn d-flex align-items-center justify-content-center">
-                <a href="img/12.png" data-lightbox="portfolio" data-title="Playtime Fun">
-                  <i class="fa fa-plus text-white" style="font-size: 48px"></i>
-                </a>
-              </div>
-            </div>
-            <div class="card-body text-center">
-              <h5 class="mb-1">Playtime Fun</h5>
-              <p class="text-muted small mb-0">Building friendships through play</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 mb-4 portfolio-item first" data-aos="flip-up">
-          <div class="card border-0 shadow-sm h-100">
-            <div class="position-relative overflow-hidden rounded gallery-img-wrapper">
-              <img class="img-fluid w-100 h-100 object-fit-cover" src="img/13.png" alt="Playing" />
-              <div class="portfolio-btn d-flex align-items-center justify-content-center">
-                <a href="img/13.png" data-lightbox="portfolio" data-title="Playtime Fun">
-                  <i class="fa fa-plus text-white" style="font-size: 48px"></i>
-                </a>
-              </div>
-            </div>
-            <div class="card-body text-center">
-              <h5 class="mb-1">Playtime Fun</h5>
-              <p class="text-muted small mb-0">Building friendships through play</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 mb-4 portfolio-item first" data-aos="flip-up">
-          <div class="card border-0 shadow-sm h-100">
-            <div class="position-relative overflow-hidden rounded gallery-img-wrapper">
-              <img class="img-fluid w-100 h-100 object-fit-cover" src="img/14.png" alt="Playing" />
-              <div class="portfolio-btn d-flex align-items-center justify-content-center">
-                <a href="img/14.png" data-lightbox="portfolio" data-title="Playtime Fun">
-                  <i class="fa fa-plus text-white" style="font-size: 48px"></i>
-                </a>
-              </div>
-            </div>
-            <div class="card-body text-center">
-              <h5 class="mb-1">Playtime Fun</h5>
-              <p class="text-muted small mb-0">Building friendships through play</p>
-            </div>
-          </div>
-        </div>
-         <div class="col-lg-4 col-md-6 mb-4 portfolio-item first" data-aos="flip-up">
-          <div class="card border-0 shadow-sm h-100">
-            <div class="position-relative overflow-hidden rounded gallery-img-wrapper">
-              <img class="img-fluid w-100 h-100 object-fit-cover" src="img/WhatsApp Image 2025-06-27 at 21.06.05_3c222e80.jpg" alt="Playing" />
-              <div class="portfolio-btn d-flex align-items-center justify-content-center">
-                <a href="img/WhatsApp Image 2025-06-27 at 21.06.05_3c222e80.jpg" data-lightbox="portfolio" data-title="Playtime Fun">
-                  <i class="fa fa-plus text-white" style="font-size: 48px"></i>
-                </a>
-              </div>
-            </div>
-            <div class="card-body text-center">
-              <h5 class="mb-1">Karate</h5>
-              <p class="text-muted small mb-0">Building friendships through play</p>
-            </div>
-          </div>
-        </div>
-         <div class="col-lg-4 col-md-6 mb-4 portfolio-item first" data-aos="flip-up">
-          <div class="card border-0 shadow-sm h-100">
-            <div class="position-relative overflow-hidden rounded gallery-img-wrapper">
-              <img class="img-fluid w-100 h-100 object-fit-cover" src="img/WhatsApp Image 2025-06-27 at 21.06.05_bf5eab71.jpg" alt="Playing" />
-              <div class="portfolio-btn d-flex align-items-center justify-content-center">
-                <a href="img/WhatsApp Image 2025-06-27 at 21.06.05_bf5eab71.jpg" data-lightbox="portfolio" data-title="Playtime Fun">
-                  <i class="fa fa-plus text-white" style="font-size: 48px"></i>
-                </a>
-              </div>
-            </div>
-            <div class="card-body text-center">
-              <h5 class="mb-1">Karate</h5>
-              <p class="text-muted small mb-0">Building friendships through play</p>
-            </div>
-          </div>
-        </div>
-         <div class="col-lg-4 col-md-6 mb-4 portfolio-item first" data-aos="flip-up">
-          <div class="card border-0 shadow-sm h-100">
-            <div class="position-relative overflow-hidden rounded gallery-img-wrapper">
-              <img class="img-fluid w-100 h-100 object-fit-cover" src="img/WhatsApp Image 2025-06-27 at 21.06.05_ed57a4bc.jpg" alt="Playing" />
-              <div class="portfolio-btn d-flex align-items-center justify-content-center">
-                <a href="img/WhatsApp Image 2025-06-27 at 21.06.05_ed57a4bc.jpg" data-lightbox="portfolio" data-title="Playtime Fun">
-                  <i class="fa fa-plus text-white" style="font-size: 48px"></i>
-                </a>
-              </div>
-            </div>
-            <div class="card-body text-center">
-              <h5 class="mb-1">Karate</h5>
-              <p class="text-muted small mb-0">Building friendships through play</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 mb-4 portfolio-item first" data-aos="flip-up">
-          <div class="card border-0 shadow-sm h-100">
-            <div class="position-relative overflow-hidden rounded gallery-img-wrapper">
-              <img class="img-fluid w-100 h-100 object-fit-cover" src="img/15.png" alt="Playing" />
-              <div class="portfolio-btn d-flex align-items-center justify-content-center">
-                <a href="img/15.png" data-lightbox="portfolio" data-title="Playtime Fun">
-                  <i class="fa fa-plus text-white" style="font-size: 48px"></i>
-                </a>
-              </div>
-            </div>
-            <div class="card-body text-center">
-              <h5 class="mb-1">Playtime Fun</h5>
-              <p class="text-muted small mb-0">Building friendships through play</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 mb-4 portfolio-item first" data-aos="flip-up">
-          <div class="card border-0 shadow-sm h-100">
-            <div class="position-relative overflow-hidden rounded gallery-img-wrapper">
-              <img class="img-fluid w-100 h-100 object-fit-cover" src="img/16.png" alt="Playing" />
-              <div class="portfolio-btn d-flex align-items-center justify-content-center">
-                <a href="img/16.png" data-lightbox="portfolio" data-title="Playtime Fun">
-                  <i class="fa fa-plus text-white" style="font-size: 48px"></i>
-                </a>
-              </div>
-            </div>
-            <div class="card-body text-center">
-              <h5 class="mb-1">Playtime Fun</h5>
-              <p class="text-muted small mb-0">Building friendships through play</p>
-            </div>
-          </div>
-        </div>
-
-
-        <!-- Add more items here as needed -->
-
       </div>
     </div>
   </section>
 
 
-  <!-- Gallery End -->
+
 
   <!-- Videos Start -->
   <div class="container-fluid pt-5 pb-3">
@@ -1012,7 +976,7 @@
         <div class="col-md-6 col-lg-3 text-center team mb-5" data-aos="zoom-in-up" data-aos-delay="300">
           <div class="position-relative mb-4 team-img-wrapper">
             <img class="img-fluid rounded-circle border border-warning shadow"
-              src="img/teachers/Untitled design (79).png" alt=" Harshali"
+              src="img/teachers/Untitled design (79).png" alt="Samridh"
               style="width:180px; height:180px; object-fit:cover;">
             <div
               class="team-social d-flex align-items-center justify-content-center position-absolute team-social-hover">
@@ -1024,14 +988,14 @@
                 style="width: 48px; height: 48px;" href="#"><i class="fab fa-linkedin-in text-white"></i></a>
             </div>
           </div>
-          <h4 class="font-weight-bold mb-1"> Harshali</h4>
+          <h4 class="font-weight-bold mb-1">Samridh</h4>
           <i>Early Intervention Teacher</i>
         </div>
 
         <!-- Teacher 4 -->
         <div class="col-md-6 col-lg-3 text-center team mb-5" data-aos="flip-left" data-aos-delay="400">
           <div class="position-relative mb-4 team-img-wrapper">
-            <img class="img-fluid rounded-circle border border-danger shadow" src="" alt="Samridh"
+            <img class="img-fluid rounded-circle border border-danger shadow" src="" alt="Harshali"
               style="width:180px; height:180px; object-fit:cover;">
             <div
               class="team-social d-flex align-items-center justify-content-center position-absolute team-social-hover">
@@ -1043,8 +1007,8 @@
                 style="width: 48px; height: 48px;" href="#"><i class="fab fa-linkedin-in text-white"></i></a>
             </div>
           </div>
-          <h4 class="font-weight-bold mb-1">Samridh</h4>
-          <i>Teacher</i>
+          <h4 class="font-weight-bold mb-1">Harshali</h4>
+          <i>Taekwando Coach</i>
         </div>
       </div>
     </div>
@@ -1176,60 +1140,66 @@
 
 
   <!-- Testimonial Image Gallery Section -->
-  <div class="container-fluid py-5">
-    <div class="container">
+<div class="container-fluid py-5" style="background-color: #f8f9fa;">
+  <div class="container">
+    <div class="row g-4">
+      <!-- Testimonial Image 1 -->
+      <div class="col-lg-4 col-md-6 col-sm-12" data-aos="zoom-in" data-aos-delay="100">
+        <a data-fancybox="testimonial-gallery" href="img/reviews/1.png">
+          <div class="ratio ratio-3x4 rounded shadow-sm overflow-hidden">
+            <img src="img/reviews/1.png" alt="Happy Parent" class="img-fluid w-100 h-100" style="object-fit: cover;">
+          </div>
+        </a>
+      </div>
 
-      <div class="row">
-        <!-- Testimonial Image 1 -->
-        <div class="col-lg-3 col-md-4 col-sm-6 mb-4" data-aos="zoom-in" data-aos-delay="100">
-          <a data-fancybox="testimonial-gallery" href="img/reviews/1.png">
-            <img src="img/reviews/1.png" alt="Happy Parent" class="img-fluid w-100 rounded shadow-sm"
-              style="height:400px; object-fit:cover;">
-          </a>
-        </div>
+      <!-- Testimonial Image 2 -->
+      <div class="col-lg-4 col-md-6 col-sm-12" data-aos="zoom-in" data-aos-delay="200">
+        <a data-fancybox="testimonial-gallery" href="img/reviews/2.png">
+          <div class="ratio ratio-3x4 rounded shadow-sm overflow-hidden">
+            <img src="img/reviews/2.png" alt="Parent with child" class="img-fluid w-100 h-100" style="object-fit: cover;">
+          </div>
+        </a>
+      </div>
 
-        <!-- Testimonial Image 2 -->
-        <div class="col-lg-3 col-md-4 col-sm-6 mb-4" data-aos="zoom-in" data-aos-delay="200">
-          <a data-fancybox="testimonial-gallery" href="img/reviews/2.png">
-            <img src="img/reviews/2.png" alt="Parent with child" class="img-fluid w-100 rounded shadow-sm"
-              style="height:400px; object-fit:cover;">
-          </a>
-        </div>
+      <!-- Testimonial Image 3 -->
+      <div class="col-lg-4 col-md-6 col-sm-12" data-aos="zoom-in" data-aos-delay="300">
+        <a data-fancybox="testimonial-gallery" href="img/reviews/3.png">
+          <div class="ratio ratio-3x4 rounded shadow-sm overflow-hidden">
+            <img src="img/reviews/3.png" alt="Family Feedback" class="img-fluid w-100 h-100" style="object-fit: cover;">
+          </div>
+        </a>
+      </div>
 
-        <!-- Testimonial Image 3 -->
-        <div class="col-lg-3 col-md-4 col-sm-6 mb-4" data-aos="zoom-in" data-aos-delay="300">
-          <a data-fancybox="testimonial-gallery" href="img/reviews/3.png">
-            <img src="img/reviews/3.png" alt="Family Feedback" class="img-fluid w-100 rounded shadow-sm"
-              style="height:400px; object-fit:cover;">
-          </a>
-        </div>
+      <!-- Testimonial Image 4 -->
+      <div class="col-lg-4 col-md-6 col-sm-12" data-aos="zoom-in" data-aos-delay="400">
+        <a data-fancybox="testimonial-gallery" href="img/reviews/4.png">
+          <div class="ratio ratio-3x4 rounded shadow-sm overflow-hidden">
+            <img src="img/reviews/4.png" alt="Smiling Parents" class="img-fluid w-100 h-100" style="object-fit: cover;">
+          </div>
+        </a>
+      </div>
 
-        <!-- Testimonial Image 4 -->
-        <div class="col-lg-3 col-md-4 col-sm-6 mb-4" data-aos="zoom-in" data-aos-delay="400">
-          <a data-fancybox="testimonial-gallery" href="img/reviews/4.png">
-            <img src="img/reviews/4.png" alt="Smiling Parents" class="img-fluid w-100 rounded shadow-sm"
-              style="height:400px; object-fit:cover;">
-          </a>
-        </div>
+      <!-- Testimonial Image 5 -->
+      <div class="col-lg-4 col-md-6 col-sm-12" data-aos="zoom-in" data-aos-delay="500">
+        <a data-fancybox="testimonial-gallery" href="img/reviews/5.png">
+          <div class="ratio ratio-3x4 rounded shadow-sm overflow-hidden">
+            <img src="img/reviews/5.png" alt="Positive Review" class="img-fluid w-100 h-100" style="object-fit: cover;">
+          </div>
+        </a>
+      </div>
 
-        <!-- Testimonial Image 5 -->
-        <div class="col-lg-3 col-md-4 col-sm-6 mb-4" data-aos="zoom-in" data-aos-delay="500">
-          <a data-fancybox="testimonial-gallery" href="img/reviews/5.png">
-            <img src="img/reviews/5.png" alt="Positive Review" class="img-fluid w-100 rounded shadow-sm"
-              style="height:400px; object-fit:cover;">
-          </a>
-        </div>
-
-        <!-- Testimonial Image 6 -->
-        <div class="col-lg-3 col-md-4 col-sm-6 mb-4" data-aos="zoom-in" data-aos-delay="600">
-          <a data-fancybox="testimonial-gallery" href="img/reviews/6.png">
-            <img src="img/reviews/6.png" alt="Feedback" class="img-fluid w-100 rounded shadow-sm"
-              style="height:400px; object-fit:cover;">
-          </a>
-        </div>
+      <!-- Testimonial Image 6 -->
+      <div class="col-lg-4 col-md-6 col-sm-12" data-aos="zoom-in" data-aos-delay="600">
+        <a data-fancybox="testimonial-gallery" href="img/reviews/6.png">
+          <div class="ratio ratio-3x4 rounded shadow-sm overflow-hidden">
+            <img src="img/reviews/6.png" alt="Feedback" class="img-fluid w-100 h-100" style="object-fit: cover;">
+          </div>
+        </a>
       </div>
     </div>
   </div>
+</div>
+
 
 
 
@@ -1345,13 +1315,19 @@
   <!-- Contact Javascript File -->
   <script src="mail/jqBootstrapValidation.min.js"></script>
   <script src="mail/contact.js"></script>
-
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <!-- Template Javascript -->
   <script src="js/main.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
   <!-- Isotope for Filter -->
   <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
   <!-- Fancybox JS -->
   <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
   <script>

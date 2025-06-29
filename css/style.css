@@ -6,7 +6,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 :root {
-  --blue: #007bff;
+  --blue: # 7FCD28;
   --indigo: #6610f2;
   --purple: #6f42c1;
   --pink: #e83e8c;
@@ -10043,7 +10043,9 @@ a{
   height: 250px;
   position: relative;
 }
-
+.gallery-img-wrapper img {
+object-fit: contain;
+}
 .portfolio-btn {
   position: absolute;
   top: 0;
@@ -10103,3 +10105,256 @@ a{
 }
 
 
+
+.owl-nav {
+    position: absolute;
+    top: 35%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    pointer-events: none;
+  }
+
+  .owl-nav button {
+    background-color: #7FCD28;
+    border-radius: 50%;
+    padding: 10px 15px;
+    color: white;
+    border: none;
+    pointer-events: all;
+    transition: background-color 0.3s ease;
+  }
+
+  .owl-nav button:hover {
+    background-color: #0056b3;
+  }
+
+  .owl-nav .owl-prev {
+    position: absolute;
+    left: -40px;
+  }
+
+  .owl-nav .owl-next {
+    position: absolute;
+    right: -40px;
+  }
+
+  .service-shadow {
+    transition: transform 0.3s ease;
+  }
+
+  .service-shadow:hover {
+    transform: translateY(-5px);
+  }
+
+  /* Card Styles */
+.service-card-style {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 15px;
+  overflow: hidden;
+  /* min-height: 460px; */
+}
+
+.service-card-style:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+.card-img-top {
+  height: 230px;
+  object-fit: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+/* Owl Carousel Navigation */
+.owl-nav {
+  position: absolute;
+  top: 35%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  pointer-events: none;
+}
+
+.owl-nav button.owl-prev,
+.owl-nav button.owl-next {
+  background: #ffffff;
+  border: 2px solid #7FCD28;
+  color: #7FCD28;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  font-size: 20px;
+  pointer-events: all;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.owl-nav button:hover {
+  background: #7FCD28;
+  color: #fff;
+  transform: scale(1.1);
+}
+
+.owl-nav .owl-prev {
+  margin-left: -25px;
+}
+
+.owl-nav .owl-next {
+  margin-right: -25px;
+}
+
+
+ .custom-nav-btn {
+    width: 45px;
+    height: 45px;
+    background: #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+    font-size: 1.2rem;
+    transition: 0.3s;
+  }
+
+  .custom-nav-btn:hover {
+    background-color: #7FCD28;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .owl-nav {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    margin-top: -22.5px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    pointer-events: none;
+  }
+
+  .owl-nav .custom-nav-btn {
+    pointer-events: auto;
+  }
+
+  .service-card-style {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .service-card-style img {
+    height: 250px;
+    object-fit: cover;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+  }
+
+  .service-card-style .card-body {
+    flex-grow: 1;
+  }
+
+
+
+    .owl-carousel .item {
+    padding: 10px;
+  }
+
+  .service-card-style {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .service-card-style img {
+    height: 250px;
+    object-fit: cover;
+  }
+
+  .owl-nav {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    margin-top: -20px;
+    display: flex;
+    justify-content: space-between;
+    pointer-events: none;
+  }
+
+  .owl-nav button {
+    pointer-events: auto;
+    background: white !important;
+    border-radius: 50% !important;
+    width: 45px;
+    height: 45px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease;
+  }
+
+  .owl-nav button:hover {
+    background: #7FCD28 !important;
+    color: white !important;
+  }
+
+  .owl-nav i {
+    font-size: 1.2rem;
+  }
+
+
+
+   .swiper {
+    position: relative;
+    overflow: visible;
+  }
+
+  .swiper-wrapper {
+    padding-bottom: 60px; /* Push cards up a bit to make space */
+  }
+
+  .swiper-pagination {
+    position: relative;
+    bottom: 0;
+    margin-top: 40px; /* Push bullets down below cards */
+    text-align: center;
+  }
+
+  .swiper-pagination-bullet {
+    background-color: #999;
+    opacity: 1;
+    margin: 0 4px;
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: #333;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .swiper-button-next {
+    right: -40px;
+  }
+
+  .swiper-button-prev {
+    left: -40px;
+  }
+  .swiper-button-next::after,
+  .swiper-button-prev::after{
+    display: none;
+  }
+    .swiper-pagination-bullet {
+    background-color: #28a745 !important; /* green */
+    opacity: 0.5 !important;
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: #28a745 !important;
+    opacity: 1 !important;
+  }
